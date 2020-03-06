@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c74755b9-5c81-4a83-a176-5dcefa770476" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WorkBreakTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/WordBreak.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,9 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com" />
     </key>
@@ -89,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583506450399</updated>
-      <workItem from="1583506453436" duration="608000" />
+      <workItem from="1583506453436" duration="851000" />
     </task>
     <task id="LOCAL-00001" summary="Code Test">
       <created>1583506705542</created>
@@ -98,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583506705542</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Code Test">
+      <created>1583507171362</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583507171362</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,13 +116,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="Code Test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="572" y="118" key="CommitChangelistDialog2" timestamp="1583506690381">
+    <state x="744" y="387" width="431" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583507306032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583506690381" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1583506755239">
+    <state x="744" y="387" width="431" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1583507306032" />
+    <state x="572" y="118" key="CommitChangelistDialog2" timestamp="1583507156870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583506755239" />
+    <state x="572" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583507156870" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1583507182501">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583507182501" />
   </component>
 </project>
