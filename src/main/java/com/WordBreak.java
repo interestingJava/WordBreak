@@ -23,7 +23,7 @@ public class WordBreak {
     * userDictionary:用户自定义字典
     * */
     private static void wordBreak(String word,String[] userDictionary) {
-        if(userDictionary.length>0){
+        if(userDictionary!=null){
             Map<String, Object> map = new HashMap<String, Object>();
             for (String word1 : dictionary) {
                 map.put(word1, word1);
