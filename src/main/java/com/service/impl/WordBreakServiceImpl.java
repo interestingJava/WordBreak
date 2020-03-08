@@ -1,13 +1,15 @@
-package com.service;
+package com.service.impl;
 
 
 import com.pojo.Dictionary;
+import com.service.WordBreakService;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 
-public class WordBreak {
+public class WordBreakServiceImpl implements WordBreakService {
     /*
     * 默认字典
     * */
@@ -19,19 +21,20 @@ public class WordBreak {
     * word:需要分隔的字符串
     * userDictionary:用户自定义字典
     * */
+    @Override
     public void wordBreak(String word, Dictionary userDictionary) {
-        if(userDictionary!=null
-           && userDictionary.getDictionary()!=null){
-            Map<String, Object> map = new HashMap<String, Object>();
-            for (String word1 : dictionary) {
-                map.put(word1, word1);
+        if(word!=null){
+            if(userDictionary!=null
+                && userDictionary.getDictionary()!=null){
+                    Map<String, Object> map = new HashMap<String, Object>();
+                    Arrays.asList(dictionary)
+                            .forEach(word1 ->map.put(word1, word1));
+                    Arrays.asList(userDictionary.getDictionary())
+                            .forEach(word2 ->map.put(word2, word2));
+                    dictionary = map.keySet().toArray(new String[1]);
             }
-            for (String word2 : userDictionary.getDictionary()) {
-                map.put(word2, word2);
-            }
-            dictionary = map.keySet().toArray(new String[1]);
+            wordBreakUtil(word, word.length(), "");
         }
-        wordBreakUtil(word, word.length(), "");
     }
 
     /*
@@ -68,4 +71,5 @@ public class WordBreak {
                 return true;
         return false;
     }
+
 }

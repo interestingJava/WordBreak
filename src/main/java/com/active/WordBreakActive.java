@@ -1,12 +1,12 @@
 package com.active;
 
-import com.service.WordBreak;
+import com.service.impl.WordBreakServiceImpl;
 
 public class WordBreakActive {
 
     public static void main(String[] args) {
         String word = "ilikesamsungmobile";
-        WordBreak wb=new WordBreak();
+        WordBreakServiceImpl wb=new WordBreakServiceImpl();
         wb.wordBreak(word,null);
     }
 

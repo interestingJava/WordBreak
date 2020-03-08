@@ -1,10 +1,14 @@
 package com.service;
 
 import com.pojo.Dictionary;
-import com.service.WordBreak;
+import com.service.impl.WordBreakServiceImpl;
 import org.junit.Test;
 
+import javax.annotation.Resource;
+
 public class WorkBreakTest {
+
+    WordBreakServiceImpl wordBreakService=new WordBreakServiceImpl();
 
     /*
     * 测试1
@@ -14,8 +18,7 @@ public class WorkBreakTest {
     @Test
     public void test1(){
         String word = "ilikesamsungmobile";
-        WordBreak wb=new WordBreak();
-        wb.wordBreak(word,null);
+        wordBreakService.wordBreak(word,null);
     }
 
     /*
@@ -26,8 +29,7 @@ public class WorkBreakTest {
     @Test
     public void test2(){
         String word = "ilikeicecreamandmango";
-        WordBreak wb=new WordBreak();
-        wb.wordBreak(word,null);
+        wordBreakService.wordBreak(word,null);
     }
 
     /*
@@ -41,8 +43,7 @@ public class WorkBreakTest {
         String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
         Dictionary userDictionary=new Dictionary();
         userDictionary.setDictionary(dictionary);
-        WordBreak wb=new WordBreak();
-        wb.wordBreak(word,userDictionary);
+        wordBreakService.wordBreak(word,userDictionary);
     }
 
     /*
@@ -56,8 +57,57 @@ public class WorkBreakTest {
         String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
         Dictionary userDictionary=new Dictionary();
         userDictionary.setDictionary(dictionary);
-        WordBreak wb=new WordBreak();
-        wb.wordBreak(word,userDictionary);
+        wordBreakService.wordBreak(word,userDictionary);
+    }
+
+    /*
+     * 测试5
+     * 被分隔字符串： "";
+     * 用户字典：{ "i","like","sam","sung","mobile","icecream","man go","mango" }
+     * */
+    @Test
+    public void test5(){
+        String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
+        Dictionary userDictionary=new Dictionary();
+        userDictionary.setDictionary(dictionary);
+        wordBreakService.wordBreak("",userDictionary);
+    }
+
+    /*
+     * 测试6
+     * 被分隔字符串： null;
+     * 用户字典：{ "i","like","sam","sung","mobile","icecream","man go","mango" }
+     * */
+    @Test
+    public void test6(){
+        String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
+        Dictionary userDictionary=new Dictionary();
+        userDictionary.setDictionary(dictionary);
+        wordBreakService.wordBreak(null,userDictionary);
+    }
+
+    /*
+     * 测试7
+     * 被分隔字符串： "";
+     * 用户字典：{ }
+     * */
+    @Test
+    public void test7(){
+        String word = "";
+        String [] dictionary= {};
+        Dictionary userDictionary=new Dictionary();
+        userDictionary.setDictionary(dictionary);
+        wordBreakService.wordBreak(word,userDictionary);
+    }
+
+    /*
+     * 测试8
+     * 被分隔字符串： null;
+     * 用户字典：null
+     * */
+    @Test
+    public void test8 (){
+        wordBreakService.wordBreak(null,null);
     }
 
 

@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c74755b9-5c81-4a83-a176-5dcefa770476" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/active/WordBreakActive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Dictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/service/WorkBreakTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/WordBreakService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/WordBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/WorkBreakTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/active/WordBreakActive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/active/WordBreakActive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/WordBreakServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/service/WorkBreakTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/service/WorkBreakTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -45,7 +44,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eladmin/admin/eladmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pmsUpGreat/marketcenter" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -56,7 +59,7 @@
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WordBreakActive">
+  <component name="RunManager" selected="JUnit.WorkBreakTest">
     <configuration name="WordBreakActive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.active.WordBreakActive" />
       <module name="wordbreak" />
@@ -66,6 +69,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkBreakTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wordbreak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.service" />
+      <option name="MAIN_CLASS_NAME" value="com.service.WorkBreakTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkBreakTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WorkBreakTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wordbreak" />
       <extension name="coverage">
         <pattern>
@@ -96,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.service" />
       <option name="MAIN_CLASS_NAME" value="com.service.WorkBreakTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkBreakTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WorkBreakTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wordbreak" />
       <extension name="coverage">
         <pattern>
@@ -112,23 +130,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.service" />
       <option name="MAIN_CLASS_NAME" value="com.service.WorkBreakTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WorkBreakTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wordbreak" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.service" />
-      <option name="MAIN_CLASS_NAME" value="com.service.WorkBreakTest" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WorkBreakTest" />
         <item itemvalue="Application.WordBreakActive" />
-        <item itemvalue="JUnit.WorkBreakTest.test2" />
         <item itemvalue="JUnit.WorkBreakTest.test1" />
-        <item itemvalue="JUnit.WorkBreakTest.test4" />
-        <item itemvalue="JUnit.WorkBreakTest.test3" />
+        <item itemvalue="JUnit.WorkBreakTest.test5" />
+        <item itemvalue="JUnit.WorkBreakTest.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +169,8 @@
       <option name="presentableId" value="Default" />
       <updated>1583506450399</updated>
       <workItem from="1583506453436" duration="2337000" />
-      <workItem from="1583547903906" duration="6776000" />
+      <workItem from="1583547903906" duration="8043000" />
+      <workItem from="1583634432982" duration="8866000" />
     </task>
     <task id="LOCAL-00001" summary="Code Test">
       <created>1583506705542</created>
@@ -197,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583548067934</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Code Test">
+      <created>1583579100093</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583579100093</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,42 +218,62 @@
     <option name="LAST_COMMIT_MESSAGE" value="Code Test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1583574274504">
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1583642144517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583574274504" />
-    <state x="744" y="387" width="431" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583574176971">
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583642144517" />
+    <state x="744" y="387" width="431" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583634626719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="744" y="387" width="431" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1583574176971" />
-    <state x="572" y="118" key="CommitChangelistDialog2" timestamp="1583548054416">
+    <state x="744" y="387" width="431" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1583634626719" />
+    <state x="572" y="118" key="CommitChangelistDialog2" timestamp="1583579088827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583548054416" />
-    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1583573026407">
+    <state x="572" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583579088827" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1583634473286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583573026407" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1583575075359">
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583634473286" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1583645867965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583575075359" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1583575075359">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583645867965" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1583645867965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583575075359" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1583575075359">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583645867965" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1583645867964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583575075359" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1583575075359">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583645867964" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1583645867965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583575075359" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1583548080169">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583645867965" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583642611310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583548080169" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583642611310" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1583642611310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583642611310" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1583642611310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583642611310" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1583642611310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583642611310" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1583642590345">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583642590345" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1583579566346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583579566346" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583575072233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
