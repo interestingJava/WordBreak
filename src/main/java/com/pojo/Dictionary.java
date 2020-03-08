@@ -1,9 +1,10 @@
 package com.pojo;
 
+/*
+ * 字典
+ * */
 public class Dictionary {
-    /*
-     * 用户字典
-     * */
+
     private String[] dictionary ={};
 
 

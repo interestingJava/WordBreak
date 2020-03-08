@@ -1,6 +1,7 @@
 package com.service;
 
 import com.pojo.Dictionary;
+import com.pojo.UserDictionary;
 import com.service.impl.WordBreakServiceImpl;
 import org.junit.Test;
 
@@ -41,7 +42,7 @@ public class WorkBreakTest {
     public void test3(){
         String word = "ilikesamsungmobile";
         String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
-        Dictionary userDictionary=new Dictionary();
+        UserDictionary userDictionary=new UserDictionary();
         userDictionary.setDictionary(dictionary);
         wordBreakService.wordBreak(word,userDictionary);
     }
@@ -55,7 +56,7 @@ public class WorkBreakTest {
     public void test4(){
         String word = "ilikeicecreamandmango";
         String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
-        Dictionary userDictionary=new Dictionary();
+        UserDictionary userDictionary=new UserDictionary();
         userDictionary.setDictionary(dictionary);
         wordBreakService.wordBreak(word,userDictionary);
     }
@@ -68,7 +69,7 @@ public class WorkBreakTest {
     @Test
     public void test5(){
         String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
-        Dictionary userDictionary=new Dictionary();
+        UserDictionary userDictionary=new UserDictionary();
         userDictionary.setDictionary(dictionary);
         wordBreakService.wordBreak("",userDictionary);
     }
@@ -81,7 +82,7 @@ public class WorkBreakTest {
     @Test
     public void test6(){
         String [] dictionary= { "i","like","sam","sung","mobile","icecream","man go","mango" };
-        Dictionary userDictionary=new Dictionary();
+        UserDictionary userDictionary=new UserDictionary();
         userDictionary.setDictionary(dictionary);
         wordBreakService.wordBreak(null,userDictionary);
     }
@@ -95,7 +96,7 @@ public class WorkBreakTest {
     public void test7(){
         String word = "";
         String [] dictionary= {};
-        Dictionary userDictionary=new Dictionary();
+        UserDictionary userDictionary=new UserDictionary();
         userDictionary.setDictionary(dictionary);
         wordBreakService.wordBreak(word,userDictionary);
     }

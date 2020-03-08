@@ -1,7 +1,9 @@
 package com.service.impl;
 
 
+import com.pojo.DefaultDictionary;
 import com.pojo.Dictionary;
+import com.pojo.UserDictionary;
 import com.service.WordBreakService;
 
 import java.util.Arrays;
@@ -13,7 +15,7 @@ public class WordBreakServiceImpl implements WordBreakService {
     /*
     * 默认字典
     * */
-    private static String[] dictionary = { "mobile", "samsung", "sam", "sung", "man", "go", "i",  "and","like", "ice", "cream" };
+    private static DefaultDictionary defaultDictionary=new DefaultDictionary();
 
     /*
     * 分隔字符串前参数设置
@@ -22,16 +24,16 @@ public class WordBreakServiceImpl implements WordBreakService {
     * userDictionary:用户自定义字典
     * */
     @Override
-    public void wordBreak(String word, Dictionary userDictionary) {
+    public void wordBreak(String word, UserDictionary userDictionary) {
         if(word!=null){
             if(userDictionary!=null
                 && userDictionary.getDictionary()!=null){
                     Map<String, Object> map = new HashMap<String, Object>();
-                    Arrays.asList(dictionary)
+                    Arrays.asList(defaultDictionary.getDictionary())
                             .forEach(word1 ->map.put(word1, word1));
                     Arrays.asList(userDictionary.getDictionary())
                             .forEach(word2 ->map.put(word2, word2));
-                    dictionary = map.keySet().toArray(new String[1]);
+                defaultDictionary.setDictionary(map.keySet().toArray(new String[1]));
             }
             wordBreakUtil(word, word.length(), "");
         }
@@ -65,9 +67,9 @@ public class WordBreakServiceImpl implements WordBreakService {
     *prefix：待比较的值
     * */
     private boolean dictionaryContains(String prefix) {
-        int n = dictionary.length;
+        int n = defaultDictionary.getDictionary().length;
         for (int i = 0; i < n; i++)
-            if (dictionary[i].compareTo(prefix) == 0)
+            if (defaultDictionary.getDictionary()[i].compareTo(prefix) == 0)
                 return true;
         return false;
     }
